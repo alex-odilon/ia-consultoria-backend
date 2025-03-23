@@ -22,7 +22,8 @@ def process_question(pergunta: str):
 
     for app in apps:
         # Verifica se todos os termos do nome_fantasia estão na pergunta
-        if all(p in pergunta for p in app["nome_fantasia"].lower().split()):
+        nome_fantasia = app["nome_fantasia"].lower()
+        if all(word in pergunta for word in nome_fantasia.split() if len(word) > 2):
             # Procura por intenção (ex: dns, porta, etc.)
             for palavra, campo in intent_map.items():
                 if palavra in pergunta:
