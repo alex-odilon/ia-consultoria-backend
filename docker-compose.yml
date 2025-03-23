@@ -1,0 +1,22 @@
+services:
+  backend:
+    container_name: ia-backend
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    env_file:
+      - .env
+    restart: always
+
+  db:
+    image: postgres:14
+    container_name: ia-db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    restart: on-failure

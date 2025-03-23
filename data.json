@@ -1,0 +1,27 @@
+[
+  {
+    "ambiente": "dev1",
+    "nome_fantasia": "casino test backend dev 1",
+    "tipo": "backend",
+    "application_name": "back-casino-test-dev-1",
+    "dns": "back-casino-dev1.seuservidor.com"
+  },
+  {
+    "ambiente": "dev2",
+    "nome_fantasia": "casino test backend dev 2",
+    "tipo": "backend",
+    "application_name": "back-casino-test-dev-2"
+  },
+  {
+    "ambiente": "opa-gli",
+    "nome_fantasia": "casino test backend gli opa",
+    "tipo": "backend",
+    "application_name": "back-casino-gli-opa"
+  },
+  {
+    "ambiente": "pnp-gli",
+    "nome_fantasia": "casino test backend gli pnp",
+    "tipo": "backend",
+    "application_name": "back-casino-gli-pnp"
+  }
+]
