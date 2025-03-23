@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from auth import authenticate_user, create_access_token, get_current_user, register_user, reset_password_flow
-from app_logic import process_question
+from app.auth import authenticate_user, create_access_token, get_current_user, register_user, reset_password_flow
+from app.app_logic import process_question
 from pydantic import BaseModel
-from models import Base, engine
+from app.models import Base, engine
 import uvicorn
 
 app = FastAPI()

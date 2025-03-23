@@ -4,7 +4,7 @@ from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 from datetime import datetime, timedelta
 from sqlalchemy.orm import Session
-from models import User, get_user_db
+from app.models import User, get_user_db
 from dotenv import load_dotenv
 import os
 

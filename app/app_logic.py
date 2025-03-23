@@ -1,5 +1,5 @@
 import json
-from query_loki import query_logs, build_grafana_link
+from app.query_loki import query_logs, build_grafana_link
 
 # Carrega os dados das aplicações
 with open("data.json") as f:
