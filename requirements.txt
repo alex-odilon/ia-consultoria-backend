@@ -7,3 +7,7 @@ python-jose
 requests
 python-multipart
 python-dotenv
+azure-ai-inference==1.0.0b1
+azure-core
+python-dotenv
+openai>=1.12.0
